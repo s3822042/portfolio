@@ -1,9 +1,8 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/*===== MENU SHOW =====*/
+/*===== Menu show =====*/
 /* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -11,7 +10,7 @@ if (navToggle) {
   });
 }
 
-/*===== MENU HIDDEN =====*/
+/*===== Menu hidden =====*/
 /* Validate if constant exists */
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -19,7 +18,7 @@ if (navClose) {
   });
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*==================== Remove menu mobile ====================*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -29,7 +28,7 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== Accordion skills ====================*/
 
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
@@ -95,14 +94,24 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== Portfolio Swiper ====================*/
+let swiper = new Swiper('.portfolio__container', {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== Scroll section active link ====================*/
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
+/*==================== Change background header ====================*/
 
 /*==================== SHOW SCROLL UP ====================*/
 
-/*==================== DARK LIGHT THEME ====================*/
+/*==================== Dark light theme ====================*/
